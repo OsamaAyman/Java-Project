@@ -19,6 +19,7 @@ public class PyramidsImplementDAO implements PyramidsDAO{
             String line=breader.readLine();
 
             String data[];
+            float height;
             do{
                 line=breader.readLine();
                 if(line!=null){
@@ -26,7 +27,13 @@ public class PyramidsImplementDAO implements PyramidsDAO{
                     //System.out.println("aaaaaaaaaaaaaaaa"+data[7]);
                     if (data[0]=="" || data[1]=="" || data[4]=="" || data[7]=="")
                         continue;
-                    Pyramid p=new Pyramid(data[0],data[1],data[4],Float.parseFloat(data[7]));
+
+
+                    if (data[7].equals(""))
+                        height=0.0f;
+                    else
+                        height=Float.parseFloat(data[7]);
+                    Pyramid p=new Pyramid(data[0],data[1],data[4],height);
 
                     pyramids.add(p);
                 }

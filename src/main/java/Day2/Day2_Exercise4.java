@@ -4,6 +4,7 @@ import Day1.Pyramid;
 import Day1.PyramidsImplementDAO;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Day2_Exercise4 {
     public static void main(String args[]){
@@ -11,8 +12,7 @@ public class Day2_Exercise4 {
         List<Pyramid> pyramids=pyramidsDAO.readPyramidsFromCSV("src/main/resources/data/pyramids.csv");
         List<Float> sortedHight;
         sortedHight=pyramids.stream().map(Pyramid::getHeight)
-                .sorted().toList();
-
+                .sorted().collect(Collectors.toList());
         //List<Float>sortedHight=Arrays.asList(1f,2f,3f,4f,5f,6f,7f);
 
         double allDataMedian=median(sortedHight);
