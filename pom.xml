@@ -12,28 +12,53 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
             <version>4.1.2</version>
-        </dependency>
+        </dependency> <!-- apache poi-->
         <dependency>
             <groupId>joinery</groupId>
             <artifactId>joinery-dataframe</artifactId>
             <version>1.9</version>
-        </dependency>
+        </dependency> <!-- joinery-dataframe-->
         <dependency>
             <groupId>tech.tablesaw</groupId>
             <artifactId>tablesaw-core</artifactId>
             <version>0.38.2</version>
-        </dependency>
+        </dependency> <!-- tablesaw-core-->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>2.10.0</version>
-        </dependency>
+        </dependency> <!-- jackson-databind-->
         <dependency>
             <groupId>org.knowm.xchart</groupId>
             <artifactId>xchart</artifactId>
             <version>3.8.0</version>
-        </dependency>
+        </dependency> <!-- xchart-->
 
+        <dependency>
+            <groupId>com.github.haifengl</groupId>
+            <artifactId>smile-core</artifactId>
+            <version>2.6.0</version>
+        </dependency> <!-- smile-core-->
+        <dependency>
+            <groupId>com.github.haifengl</groupId>
+            <artifactId>smile-plot</artifactId>
+            <version>2.6.0</version>
+        </dependency> <!-- smile-plot-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-csv</artifactId>
+            <version>1.8</version>
+        </dependency> <!-- commons-csv-->
+        <dependency>
+            <groupId>com.github.haifengl</groupId>
+            <artifactId>smile-io</artifactId>
+            <version>2.6.0</version>
+        </dependency> <!-- smile-io-->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.12</artifactId>
+            <version>3.1.1</version>
+        </dependency> <!-- spark-core_2.12-->
     </dependencies>
 
     <properties>
